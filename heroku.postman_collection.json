@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "41414227-b427-4c77-a16f-c24721900107",
+		"name": "todolist - mongoose - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-sands-77119.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"fierce-sands-77119",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-sands-77119.herokuapp.com/posts/625c2ce26d88a70337ecf4f4",
+					"protocol": "https",
+					"host": [
+						"fierce-sands-77119",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"625c2ce26d88a70337ecf4f4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post one or many",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"name\": \"Eric\",\n        \"content\": \"今天雨停了\"\n    },\n    {\n        \"name\": \"Kumo\",\n        \"content\": \"今天好熱\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-sands-77119.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"fierce-sands-77119",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-sands-77119.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"fierce-sands-77119",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete one by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-sands-77119.herokuapp.com/posts/625c2cef6d88a70337ecf4f8",
+					"protocol": "https",
+					"host": [
+						"fierce-sands-77119",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"625c2cef6d88a70337ecf4f8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patch one by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"今天天氣不錯\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-sands-77119.herokuapp.com/posts/625b7db7e3de6a4637430e57",
+					"protocol": "https",
+					"host": [
+						"fierce-sands-77119",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"625b7db7e3de6a4637430e57"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
