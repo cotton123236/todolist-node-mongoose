@@ -5,7 +5,6 @@ const successHandler = (params) => {
   const { res, data } = params
   const { code } = STATUS.success
   res.writeHead(code, HEADERS)
-  console.log(data)
   res.write(JSON.stringify({
     status: 'success',
     data

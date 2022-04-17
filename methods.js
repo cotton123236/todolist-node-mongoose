@@ -110,7 +110,8 @@ const patchOne = async (params, model) => {
     }
     if (name) patchData.name = name
     if (content) patchData.content = content
-    const data = await model.findByIdAndUpdate(id, patchData)
+    await model.findByIdAndUpdate(id, patchData)
+    const data = await model.findById(id)
     params.data = [data]
     successHandler(params)
   }
